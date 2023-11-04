@@ -26,7 +26,7 @@ appenders:
     # 追加模式, 即每次在已有文件末尾添加日志, 默认为 true
     append: true
     encoder:
-      pattern: "{d} - {m}{n}"
+      pattern: "{d(%Y-%m-%d %H:%M:%S)} - {m}{n}"
     policy:
       kind: compound
       # 触发器
