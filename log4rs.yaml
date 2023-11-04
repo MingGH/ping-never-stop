@@ -8,7 +8,7 @@ appenders:
     encoder:
       # 格式可配置，具体格式详见：
       # https://docs.rs/log4rs/1.0.0/log4rs/encode/pattern/index.html
-      pattern: "{d} - {m}{n}"
+      pattern: "{d(%Y-%m-%d %H:%M:%S)} - {m}{n}"
 
   file:
     # 输出到文件
