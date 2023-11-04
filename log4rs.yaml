@@ -16,7 +16,7 @@ appenders:
     path: logs/app.log
     append: true
     encoder:
-      pattern: "{d} - {m}{n}"
+      pattern: "{d(%Y-%m-%d %H:%M:%S)} - {m}{n}"
 
   rolling_file:
     # 输出到滚动文件
