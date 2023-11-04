@@ -4,7 +4,7 @@ use std::process::Command;
 use std::time::Duration;
 use job_scheduler::{Job, JobScheduler};
 use regex::Regex;
-use log::{info, warn};
+use log::{info};
 
 
 fn main() {
@@ -26,7 +26,6 @@ fn main() {
             for line in String::from_utf8_lossy(&output.stdout).lines() {
                 info!("{} ", line);
             }
-            // info!("{}", format!("{}", String::from_utf8_lossy(&output.stdout)));
         }
     }));
 
