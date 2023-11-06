@@ -55,12 +55,11 @@ fn get_ip() -> Option<String> {
 }
 
 
-fn get_target_ip() -> [String; 4] {
+fn get_target_ip() -> [String; 3] {
     // 使用 String 类型定义的数组
-    let string_array: [String; 4] = [
+    let string_array: [String; 3] = [
         String::from("192.168.193.22"),
         String::from("192.168.193.21"),
-        String::from("192.168.193.26"),
         String::from("192.168.193.25"),
     ];
     return string_array;
